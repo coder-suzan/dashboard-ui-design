@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkpoints</title>
+    <!-- custom css -->
+    <link rel="stylesheet" href="assets/css/base.css">
+    <!-- dashboard css desing file -->
+    <link rel="stylesheet" href="assets/css/checkpoints.css">
+</head>
+<body>
+    <section class="mobileMenu">
+       <div class="mobileMenuDiv">
+          <div class="mobileMenuBar">
+              <div class="menuToggleBar">
+                <button class="openbtn" onclick="openNav()"> ☰</button> <a href="#">Logo</a>
+              </div>
+    
+              <div class="mobileUserImg">
+                <img src="assets/images/user-img.png" alt="user">
+              </div>
+          </div>
+       </div>
+    </section>
+
+  <section class="checkpointsDesign">
+     <div class="fixedDiv">
+        <div class="menuBar fixedTopPosition" id="mobileMenuShow">
+            <div class="closeDiv">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            </div>
+            <div class="logo">
+                <a href="#">Logo</a>
+            </div>
+            
+            <div class="menuInner">
+                <ul id="activeMenu">
+                    <li class="menuLink">
+                        <a href="dashboard.html">
+                            <img src="assets/images/dashboard.png" alt="dashboard">
+                            <span> Dashboard </span>  
+                        </a>
+                    </li>
+                    <li class="menuLink">
+                        <a href="organizations.html">
+                                <img src="assets/images/Organizations.png" alt="Organizations">
+                                <span>Organizations</span>   
+                            </a>
+                    </li>
+                    <li class="menuLink"> 
+                        <a href="instructor.html">
+                             <img src="assets/images/Instructor.png" alt="Instructor">                   
+                             <span>Instructor</span>   
+                        </a>
+                    </li>
+                    <li class="menuLink">
+                        <a href="student.html">
+                             <img src="assets/images/Student.png" alt="Student">                         
+                             <span>Student</span>   
+                        </a>
+                    </li>
+                    <li class="menuLink active">
+                        <a href="checkpoints.html">
+                            <img src="assets/images/Checkpoints.png" alt="Checkpoints">                                                  
+                             <span>Checkpoints</span>   
+                        </a>
+                    </li>
+                </ul>
+            </div>
+    
+         </div>
+     </div>
+
+     <div class="checkpointsInner">
+         <div class="headingWithImg">
+            <h2 class="heading">Checkpoints</h2>
+            <img class="hideImg" src="assets/images/user-img.png" alt="user">
+         </div>
+
+         <div class="threeBtn">
+            <a href="checkpoint_ add_new _ general.html" class="customBtn">Create Greneral Checkpoint</a>
+            <a href="checkpoint_ add_new _ completion1.html" class="customBtn">Create Completion Checkpoint</a>
+            <a href="checkpoint_ add_new _ completion2.html" class="customBtn">Create Grade Checkpoint</a>
+         </div>
+
+         <div class="checkpointsDiv">
+            <div class="box noPadding">
+                <div class="textWithIcon">
+                    <h4 class="checkpointsTitle">General Checkpoint</h4>
+                    <button><img src="assets/images/printer.png" alt=""></button>
+                </div><hr>
+                <div class="checkpointsContent">
+                    <div class="instructor">
+                        <p class="instInput">Instructor Input</p>
+                        <p class="instName">John Smith</p>
+                    </div>
+                    <div class="marginTop">
+                        <p class="instInput">Instructor Input</p>
+                        <p class="instDesp">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since th</p>
+                    </div>
+                    <div class="marginTop">
+                        <p class="instInput">Instructor Recomendation</p>
+                        <p class="instDesp">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    </div>
+
+                    <div class="marginTop">
+                        <div class="imgBox">
+                            <img src="assets/images/checkpoint-user1.png" alt="User image">
+                            <img src="assets/images/checkpoint-user2.png" alt="User image">
+                            <img src="assets/images/checkpoint-user3.png" alt="User image">
+                            <img src="assets/images/checkpoint-user4.png" alt="User image">
+                            <img src="assets/images/checkpoint-user5.png" alt="User image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box noPadding">
+                <div class="textWithIcon">
+                    <h4 class="checkpointsTitle">Completetion Checkpoint</h4>
+                    <button><img src="assets/images/printer.png" alt=""></button>
+                </div><hr>
+                <div class="checkpointsContent">
+                    <div class="instructor">
+                        <p class="instInput">Checkpoint Name</p>
+                        <p class="instName">Name here</p>
+                    </div>
+                    <div class="instructor marginTop">
+                        <p class="instInput">Validity Period</p>
+                        <p class="instName">4 Year</p>
+                    </div>
+                    <div class="marginTop">
+                        <p class="instInput">Description</p>
+                        <p class="instDesp">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since th</p>
+                    </div>
+
+                    <div class="marginTop">
+                        <div class="imgBox">
+                            <img src="assets/images/badge.png" alt="badge">
+                            <img src="assets/images/certificate.png" alt="certificate">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box noPadding">
+                <div class="textWithIcon">
+                    <h4 class="checkpointsTitle">Grade Based Checkpoint</h4>
+                    <button><img src="assets/images/printer.png" alt=""></button>
+                </div><hr>
+                <div class="checkpointsContent">
+                    <div class="instructor">
+                        <p class="instInput">Instructor Input</p>
+                        <p class="instName">John Smith</p>
+                    </div>
+                    <div class="marginTop">
+                        <p class="instInput">Instructor Input</p>
+                        <p class="instDesp">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since th</p>
+                    </div>
+                </div>
+            </div>
+         </div>
+
+     </div>
+  </section>
+
+  <script src="assets/js-code/custom.js"></script>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkpoints - Add new checkpoint</title>
+    <!-- custom css -->
+    <link rel="stylesheet" href="assets/css/base.css">
+    <!-- dashboard css desing file -->
+    <link rel="stylesheet" href="assets/css/checkpoint_ add_new _ general.css">
+</head>
+<body>
+    <section class="mobileMenu">
+       <div class="mobileMenuDiv">
+          <div class="mobileMenuBar">
+              <div class="menuToggleBar">
+                <button class="openbtn" onclick="openNav()"> ☰</button> <a href="#">Logo</a>
+              </div>
+    
+              <div class="mobileUserImg">
+                <img src="assets/images/user-img.png" alt="user">
+              </div>
+          </div>
+       </div>
+    </section>
+
+  <section class="addCheckpointsDesign">
+     <div class="fixedDiv">
+        <div class="menuBar fixedTopPosition" id="mobileMenuShow">
+            <div class="closeDiv">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            </div>
+            <div class="logo">
+                <a href="#">Logo</a>
+            </div>
+            
+            <div class="menuInner">
+                <ul id="activeMenu">
+                    <li class="menuLink">
+                        <a href="dashboard.html">
+                            <img src="assets/images/dashboard.png" alt="dashboard">
+                            <span> Dashboard </span>  
+                        </a>
+                    </li>
+                    <li class="menuLink">
+                        <a href="organizations.html">
+                                <img src="assets/images/Organizations.png" alt="Organizations">
+                                <span>Organizations</span>   
+                            </a>
+                    </li>
+                    <li class="menuLink"> 
+                        <a href="instructor.html">
+                             <img src="assets/images/Instructor.png" alt="Instructor">                   
+                             <span>Instructor</span>   
+                        </a>
+                    </li>
+                    <li class="menuLink">
+                        <a href="student.html">
+                             <img src="assets/images/Student.png" alt="Student">                         
+                             <span>Student</span>   
+                        </a>
+                    </li>
+                    <li class="menuLink active">
+                        <a href="checkpoints.html">
+                            <img src="assets/images/Checkpoints.png" alt="Checkpoints">                                                  
+                             <span>Checkpoints</span>   
+                        </a>
+                    </li>
+                </ul>
+            </div>
+    
+         </div>
+     </div>
+
+     <div class="addCheckpointsInner">
+         <div class="headingWithImg">
+            <a href="Checkpoints.html">
+                <div class="titleWithIcon">
+                    <img src="assets/images/left-arrow.png" alt="icon">
+                    <h2 class="subHeading">Add new checkpoint</h2>
+                </div>
+            </a>
+            <img class="hideImg" src="assets/images/user-img.png" alt="user">
+         </div>
+
+         <div class="checkpointsDiv">
+            <div class="box noPadding">
+                <div class="textWithIcon">
+                    <h4 class="checkpointsTitle">General Checkpoint Details</h4>
+                </div><hr>
+                <div class="checkpointsContent"> 
+                    <div class="addCheckpointsInput">
+                        <form action="#" method="post">
+                            <div class="inputFieldMargin">
+                                <label class="customLabel" for="name">Name</label><br>
+                                <input class="customInput smallWidth" type="text" id="name" name="name" placeholder="Type">
+                            </div>
+    
+                            <div class="inputFieldMargin">
+                                <label class="customLabel" for="description">Description</label><br>
+                                <textarea class="customInput smallWidth" type="text" id="description" name="description" placeholder="Type"></textarea>
+                            </div>
+    
+                            <div class="marginTopBottom">
+                                <input class="customBtn submitBtn" id="createBtn" name="createBtn" type="submit" value="Create Now">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+         </div>
+
+     </div>
+  </section>
+
+  <script src="assets/js-code/custom.js"></script>
+</body>
+</html>

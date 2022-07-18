@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student</title>
+    <!-- custom css -->
+    <link rel="stylesheet" href="assets/css/base.css">
+    <!-- dashboard css desing file -->
+    <link rel="stylesheet" href="assets/css/organizations.css">
+</head>
+<body>
+    <section class="mobileMenu">
+       <div class="mobileMenuDiv">
+          <div class="mobileMenuBar">
+              <div class="menuToggleBar">
+                <button class="openbtn" onclick="openNav()"> ☰</button> <a href="#">Logo</a>
+              </div>
+    
+              <div class="mobileUserImg">
+                <img src="assets/images/user-img.png" alt="user">
+              </div>
+          </div>
+       </div>
+    </section>
+
+  <section class="dashboardDesign">
+     <div class="fixedDiv">
+        <div class="menuBar fixedTopPosition" id="mobileMenuShow">
+            <div class="closeDiv">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            </div>
+            <div class="logo">
+                <a href="#">Logo</a>
+            </div>
+            
+            <div class="menuInner">
+                <ul id="activeMenu">
+                    <li class="menuLink">
+                        <a href="dashboard.html">
+                            <img src="assets/images/dashboard.png" alt="dashboard">
+                            <span> Dashboard </span>  
+                        </a>
+                    </li>
+                    <li class="menuLink">
+                        <a href="organizations.html">
+                                <img src="assets/images/Organizations.png" alt="Organizations">
+                                <span>Organizations</span>   
+                            </a>
+                    </li>
+                    <li class="menuLink"> 
+                        <a href="instructor.html">
+                             <img src="assets/images/Instructor.png" alt="Instructor">                   
+                             <span>Instructor</span>   
+                        </a>
+                    </li>
+                    <li class="menuLink active">
+                        <a href="student.html">
+                             <img src="assets/images/Student.png" alt="Student">                         
+                             <span>Student</span>   
+                        </a>
+                    </li>
+                    <li class="menuLink">
+                        <a href="checkpoints.html">
+                            <img src="assets/images/Checkpoints.png" alt="Checkpoints">                                                  
+                             <span>Checkpoints</span>   
+                        </a>
+                    </li>
+                </ul>
+            </div>
+    
+         </div>
+     </div>
+
+     <div class="dashboardInner">
+         <div class="headingWithImg">
+            <h2 class="heading">Students</h2>
+            <img class="hideImg" src="assets/images/user-img.png" alt="user">
+         </div>
+
+         <div class="studentOrganizations">
+
+            <div class="organizationDiv">
+                <div class="searchWithAddBtn">
+                    <input type="text" placeholder="Search..." id="search_field" title="Search from table data">
+                    <a class="customBtn addBtn" href="student_ add_new.html">Add New</a>
+                </div>
+
+                <div class="box organizationInner noPadding">
+                    <div class="responsiveTable">
+                        <table  id="myTable" class="tableStyle">
+                                <thead class="tableHeader">
+                                    <tr class="myHead">
+                                        <th>ID</th>
+                                        <th>Name</th>
+                                        <th>Qualifications</th>
+                                        <th>Phone Number</th>
+                                        <th>Address</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="tableTopMargin"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>ID</td>
+                                        <td>Vincze Nikolett</td>
+                                        <td>Level 1</td>
+                                        <td>(219) 555-0114</td>
+                                        <td>3890 Poplar Dr.</td>
+                                        <td class="dropdownMenu">
+                                            <div class="dropdown">
+                                                <button onclick="dropDownMenu()" class="dropbtn">
+                                                    <img src="assets/images/dropDown-icon.png" alt="">
+                                                </button>
+                                                <div id="myDropdown" class="dropdown-content">
+                                                  <a href="#View">View</a>
+                                                  <a href="#Edit">Edit</a>
+                                                  <a href="#Block">Block</a>
+                                                  <a href="#Suspend">Suspend</a>
+                                                  <a href="#Delete">Delete</a>
+                                                </div>
+                                              </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>ID</td>
+                                        <td>Genco Pura Olive Oil Company</td>
+                                        <td>Entry Level 1</td>
+                                        <td>(219) 555-0114</td>
+                                        <td>3890 Poplar Dr.</td>
+                                        <td class="dropdownMenu">
+                                            <div class="dropdown">
+                                                <button onclick="dropDownMenu()" class="dropbtn">
+                                                    <img src="assets/images/dropDown-icon.png" alt="">
+                                                </button>
+                                                <div id="myDropdown" class="dropdown-content">
+                                                  <a href="#View">View</a>
+                                                  <a href="#Edit">Edit</a>
+                                                  <a href="#Block">Block</a>
+                                                  <a href="#Suspend">Suspend</a>
+                                                  <a href="#Delete">Delete</a>
+                                                </div>
+                                              </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>ID</td>
+                                        <td>Wayne Enterprises</td>
+                                        <td>Level 1</td>
+                                        <td>(219) 555-0114</td>
+                                        <td>3890 Poplar Dr.</td>
+                                        <td class="dropdownMenu">
+                                            <div class="dropdown">
+                                                <button onclick="dropDownMenu()" class="dropbtn">
+                                                    <img src="assets/images/dropDown-icon.png" alt="">
+                                                </button>
+                                                <div id="myDropdown" class="dropdown-content">
+                                                  <a href="#View">View</a>
+                                                  <a href="#Edit">Edit</a>
+                                                  <a href="#Block">Block</a>
+                                                  <a href="#Suspend">Suspend</a>
+                                                  <a href="#Delete">Delete</a>
+                                                </div>
+                                              </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>ID</td>
+                                        <td>Acme Corporation</td>
+                                        <td>Level 1</td>
+                                        <td>(219) 555-0114</td>
+                                        <td>3890 Poplar Dr.</td>
+                                        <td class="dropdownMenu">
+                                            <div class="dropdown">
+                                                <button onclick="dropDownMenu()" class="dropbtn">
+                                                    <img src="assets/images/dropDown-icon.png" alt="">
+                                                </button>
+                                                <div id="myDropdown" class="dropdown-content">
+                                                  <a href="#View">View</a>
+                                                  <a href="#Edit">Edit</a>
+                                                  <a href="#Block">Block</a>
+                                                  <a href="#Suspend">Suspend</a>
+                                                  <a href="#Delete">Delete</a>
+                                                </div>
+                                              </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>ID</td>
+                                        <td>Duff Beer</td>
+                                        <td>Entry Level 1</td>
+                                        <td>(219) 555-0114</td>
+                                        <td>3890 Poplar Dr.</td>
+                                        <td class="dropdownMenu">
+                                            <div class="dropdown">
+                                                <button onclick="dropDownMenu()" class="dropbtn">
+                                                    <img src="assets/images/dropDown-icon.png" alt="">
+                                                </button>
+                                                <div id="myDropdown" class="dropdown-content">
+                                                  <a href="#View">View</a>
+                                                  <a href="#Edit">Edit</a>
+                                                  <a href="#Block">Block</a>
+                                                  <a href="#Suspend">Suspend</a>
+                                                  <a href="#Delete">Delete</a>
+                                                </div>
+                                              </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>ID</td>
+                                        <td>Soylent Corp</td>
+                                        <td>Level</td>
+                                        <td>(219) 555-0114</td>
+                                        <td>3890 Poplar Dr.</td>
+                                        <td class="dropdownMenu">
+                                            <div class="dropdown">
+                                                <button onclick="dropDownMenu()" class="dropbtn">
+                                                    <img src="assets/images/dropDown-icon.png" alt="">
+                                                </button>
+                                                <div id="myDropdown" class="dropdown-content">
+                                                  <a href="#View">View</a>
+                                                  <a href="#Edit">Edit</a>
+                                                  <a href="#Block">Block</a>
+                                                  <a href="#Suspend">Suspend</a>
+                                                  <a href="#Delete">Delete</a>
+                                                </div>
+                                              </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>ID</td>
+                                        <td>Globex Corporation</td>
+                                        <td>Level</td>
+                                        <td>(219) 555-0114</td>
+                                        <td>3890 Poplar Dr.</td>
+                                        <td class="dropdownMenu">
+                                            <div class="dropdown">
+                                                <button onclick="dropDownMenu()" class="dropbtn">
+                                                    <img src="assets/images/dropDown-icon.png" alt="">
+                                                </button>
+                                                <div id="myDropdown" class="dropdown-content">
+                                                  <a href="#View">View</a>
+                                                  <a href="#Edit">Edit</a>
+                                                  <a href="#Block">Block</a>
+                                                  <a href="#Suspend">Suspend</a>
+                                                  <a href="#Delete">Delete</a>
+                                                </div>
+                                              </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>ID</td>
+                                        <td>Sterling Cooper</td>
+                                        <td>Level 2</td>
+                                        <td>(219) 555-0114</td>
+                                        <td>3890 Poplar Dr.</td>
+                                        <td class="dropdownMenu">
+                                            <div class="dropdown">
+                                                <button onclick="dropDownMenu()" class="dropbtn">
+                                                    <img src="assets/images/dropDown-icon.png" alt="">
+                                                </button>
+                                                <div id="myDropdown" class="dropdown-content">
+                                                  <a href="#View">View</a>
+                                                  <a href="#Edit">Edit</a>
+                                                  <a href="#Block">Block</a>
+                                                  <a href="#Suspend">Suspend</a>
+                                                  <a href="#Delete">Delete</a>
+                                                </div>
+                                              </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>ID</td>
+                                        <td>Ollivander's Wand Shop</td>
+                                        <td>Level 1</td>
+                                        <td>(219) 555-0114</td>
+                                        <td>3890 Poplar Dr.</td>
+                                        <td class="dropdownMenu">
+                                            <div class="dropdown">
+                                                <button onclick="dropDownMenu()" class="dropbtn">
+                                                    <img src="assets/images/dropDown-icon.png" alt="">
+                                                </button>
+                                                <div id="myDropdown" class="dropdown-content">
+                                                  <a href="#View">View</a>
+                                                  <a href="#Edit">Edit</a>
+                                                  <a href="#Block">Block</a>
+                                                  <a href="#Suspend">Suspend</a>
+                                                  <a href="#Delete">Delete</a>
+                                                </div>
+                                              </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>ID</td>
+                                        <td>SP-holding</td>
+                                        <td>Level 2</td>
+                                        <td>(219) 555-0114</td>
+                                        <td>3890 Poplar Dr.</td>
+                                        <td class="dropdownMenu">
+                                            <div class="dropdown">
+                                                <button onclick="dropDownMenu()" class="dropbtn">
+                                                    <img src="assets/images/dropDown-icon.png" alt="">
+                                                </button>
+                                                <div id="myDropdown" class="dropdown-content">
+                                                  <a href="#View">View</a>
+                                                  <a href="#Edit">Edit</a>
+                                                  <a href="#Block">Block</a>
+                                                  <a href="#Suspend">Suspend</a>
+                                                  <a href="#Delete">Delete</a>
+                                                </div>
+                                              </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+         </div>
+     </div>
+  </section>
+
+  <script src="assets/js-code/custom.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="assets/js-code/table-data-filter.js"></script>
+
+
+</body>
+</html>

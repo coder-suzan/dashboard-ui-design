@@ -1,0 +1,324 @@
+/* dashboard Inner part design */
+.dashboardDesign{
+    display: grid;
+    grid-template-columns: 240px auto;
+    position: relative;
+}
+
+.dashboardInner{
+    margin: 30px;
+    position: static;
+}
+.headingWithImg{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.headingWithImg img{
+   width: 40px;
+   height: 40px;
+}
+
+.searchWithAddBtn{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0;
+}
+
+#search_field {
+    background-image: url(../images/search-icon.png);
+    background-repeat: no-repeat;
+    background-position: 12px 9px;
+    width: 25%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: rgba(122, 122, 122, 0.5);
+    padding: 10px 20px 10px 40px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    position: relative;
+  }
+
+  .SearchImgInput{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .SearchImgInput img{
+    width: 20px;
+  }
+
+
+  .addBtn{
+    padding: 8px 30px;
+    font-weight: 400;
+    font-size: 15px;
+  }
+
+/* student and organizations section */
+.studentOrganizations{
+    position: relative;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.box{
+  padding-bottom: 10px
+}
+
+ /* table style */
+
+ .responsiveTable{
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+
+.tableStyle{
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  .tableStyle th:first-child { 
+    -khtml-border-radius: 0 20px 20px 0;
+    -moz-border-radius: 0 20px 20px 0;
+    -ms-border-radius: 0 20px 20px 0;
+    -o-border-radius: 0 20px 20px 0;
+    -webkit-border-radius: 0 20px 20px 0;
+    border-radius: 20px 0 0 20px;
+  }
+
+  .tableStyle th:last-child{ 
+    -khtml-border-radius: 0 20px 20px 0;
+    -moz-border-radius: 0 20px 20px 0;
+    -ms-border-radius: 0 20px 20px 0;
+    -o-border-radius: 0 20px 20px 0;
+    -webkit-border-radius: 0 20px 20px 0;
+    border-radius: 0 20px 20px 0;
+  }
+
+  .tableStyle thead{
+    padding: 10px 20px;
+    background-color: var(--button-bg-color);
+    color: var(--tertiary-color);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    border-radius: 20px !important;
+    width: 100%;
+  }
+  
+th {
+    text-align: left;
+    padding:  15px 20px;
+  }
+
+  td{
+    text-align: left;
+    padding: 11px 20px 10px 20px;
+  } 
+
+  .tableStyle tbody{
+   color: var(--ash-color);
+   font-size: 14px;
+  }
+
+.dropdownMenu button{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    z-index: 2;
+    position: relative;
+}
+
+.dropdownMenu button img{
+    width: 20px;
+    height: auto;
+    z-index: -1;
+    position: relative;
+}
+
+/* dropdown button css */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--tertiary-color);
+    min-width: 110px;
+    left: -88px;
+    overflow: auto;
+    z-index: 5;
+    box-shadow: 0px 1px 4px 0px var(--button-bg-color);
+  }
+  
+  .dropdown-content a {
+    color: var(--ash-color);
+    padding: 8px 16px;
+    font-size: 14px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown a:hover {background-color: #ddd;}
+  
+  .show {display: block;}
+
+
+  /* responsive css */
+  @media screen and (max-width: 992px) {
+    .headingWithImg {
+        margin-bottom: 20px;
+    }
+
+    td, th{
+        display: 100%;
+        padding: 8px 10px;
+    }
+
+
+}
+
+@media screen and (max-width: 768px) {
+
+  .tableStyle thead{
+    font-size: 14px;
+  }
+    .dashboardDesign {
+        grid-template-columns: 1fr;
+    }
+
+    .dashboardInner {
+        margin: 20px;
+    }
+
+    #search_field {
+        width: 60%;
+        background-position: 11px 8px;
+        padding: 10px 20px 8px 36px
+   }
+
+    .headingWithImg {
+        margin-bottom: 0;
+        margin-top: 20px;
+    }
+
+    .studentOrganizations {
+        margin-top: 10px;
+  }
+
+  td, th{
+    padding: 15px;
+  }
+
+  .tableTopMargin{
+    margin-top: 10px;
+  }
+ 
+}
+
+@media screen and (max-width: 360px) {
+    #search_field {
+        width: 50%;
+ }
+}
+
+ /* mobile table data design */
+ @media screen and (max-width: 600px) {
+
+  .dropdown-content {
+    left: 0;
+  }
+  
+  .organizationInner{
+      padding: 0;
+  }
+
+  .box{
+      border-radius: 0;
+  }
+
+  .tableTopMargin{
+      display: none;
+  }
+
+  .tableHeader{
+      display: none;
+  }
+
+  tbody tr:last-child{
+      border-bottom: 2px solid #ccc; 
+  }
+
+/* Force table to not be like tables anymore */
+table, thead, tbody, th, td, tr { 
+  display: block; 
+}
+
+/* Hide table headers (but not display: none;, for accessibility) */
+thead tr { 
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
+tr { 
+      border: 1px solid #ccc; 
+      border-left: none;
+      border-right: none;
+  }
+
+td { 
+  /* Behave  like a "row" */
+  border: none;
+  border-bottom: 1px solid #eee; 
+  position: relative;
+  padding-left: 45%;
+}
+
+  th{
+      padding: 10px;
+  }
+
+td:before { 
+  /* Now like a table header */
+  position: absolute;
+      top: 13px;
+      left: 7px;
+      width: 60%; 
+      padding-right: 10px; 
+      white-space: nowrap;
+      color: #000000;
+}
+
+/* Label the data */
+td:nth-of-type(1):before { content: "ID"; }
+td:nth-of-type(2):before { content: "Name"; }
+td:nth-of-type(3):before { content: "Qualifications"; }
+td:nth-of-type(4):before { content: "Phone Number"; }
+td:nth-of-type(5):before { content: "Address"; }
+td:nth-of-type(6):before { content: "Action"; }
+
+  td:nth-of-type(1):before, td:nth-of-type(2):before, td:nth-of-type(3):before,  
+  td:nth-of-type(4):before, td:nth-of-type(5):before, td:nth-of-type(6):before{
+      font-size: 16px;
+      font-weight: 500;
+  }
+}
+

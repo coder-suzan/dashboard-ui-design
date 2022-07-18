@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students - View</title>
+    <!-- custom css -->
+    <link rel="stylesheet" href="assets/css/base.css">
+    <!-- dashboard css desing file -->
+    <link rel="stylesheet" href="assets/css/instructor_view.css">
+</head>
+<body>
+    <section class="mobileMenu">
+       <div class="mobileMenuDiv">
+          <div class="mobileMenuBar">
+              <div class="menuToggleBar">
+                <button class="openbtn" onclick="openNav()"> ☰</button> <a href="#">Logo</a>
+              </div>
+    
+              <div class="mobileUserImg">
+                <img src="assets/images/user-img.png" alt="user">
+              </div>
+          </div>
+       </div>
+    </section>
+
+  <section class="addCheckpointsDesign">
+     <div class="fixedDiv">
+        <div class="menuBar fixedTopPosition" id="mobileMenuShow">
+            <div class="closeDiv">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            </div>
+            <div class="logo">
+                <a href="#">Logo</a>
+            </div>
+            
+            <div class="menuInner">
+                <ul id="activeMenu">
+                    <li class="menuLink">
+                        <a href="dashboard.html">
+                            <img src="assets/images/dashboard.png" alt="dashboard">
+                            <span> Dashboard </span>  
+                        </a>
+                    </li>
+                    <li class="menuLink">
+                        <a href="organizations.html">
+                                <img src="assets/images/Organizations.png" alt="Organizations">
+                                <span>Organizations</span>   
+                            </a>
+                    </li>
+                    <li class="menuLink"> 
+                        <a href="instructor.html">
+                             <img src="assets/images/Instructor.png" alt="Instructor">                   
+                             <span>Instructor</span>   
+                        </a>
+                    </li>
+                    <li class="menuLink active">
+                        <a href="student.html">
+                             <img src="assets/images/Student.png" alt="Student">                         
+                             <span>Student</span>   
+                        </a>
+                    </li>
+                    <li class="menuLink">
+                        <a href="checkpoints.html">
+                            <img src="assets/images/Checkpoints.png" alt="Checkpoints">                                                  
+                             <span>Checkpoints</span>   
+                        </a>
+                    </li>
+                </ul>
+            </div>
+    
+         </div>
+     </div>
+
+     <div class="addCheckpointsInner">
+         <div class="headingWithImg">
+            <a href="student.html">
+                <div class="titleWithIcon">
+                    <img src="assets/images/left-arrow.png" alt="icon">
+                    <h2 class="subHeading">Students View</h2>
+                </div>
+            </a>
+            <img class="hideImg" src="assets/images/user-img.png" alt="user">
+         </div>
+
+         <div class="box extraPadding">
+            <div class="organizationDetailsBox">
+                <div class="organizationImg">
+                    <img src="assets/images/student-view.png" alt="student">
+                </div>
+                <div>
+                   <div>
+                        <p class="instInput">Name</p>
+                        <p class="checkpointsTitle">Alisa Smith</p>
+                   </div>
+
+                   <div class="marginTop">
+                        <p class="instInput">Qualification</p>
+                        <p class="checkpointsTitle">B Ed</p>
+                   </div>
+                </div>
+
+                <div>
+                    <div>
+                         <p class="instInput">Phone Number</p>
+                         <p class="checkpointsTitle">+964515186165</p>
+                    </div>
+ 
+                    <div class="marginTop">
+                         <p class="instInput">Email</p>
+                         <p class="checkpointsTitle">someemail@example.com</p>
+                    </div>
+                 </div>
+
+                 <div>
+                    <div>
+                         <p class="instInput">Address</p>
+                         <p class="checkpointsTitle">+City, Country</p>
+                    </div>
+ 
+                    <div class="marginTop">
+                         <p class="instInput">Date of Birth</p>
+                         <p class="checkpointsTitle">12/10/1990</p>
+                    </div>
+                 </div>
+
+                 <div>
+                    <div>
+                         <p class="instInput">Address</p>
+                         <p class="checkpointsTitle">City, Country</p>
+                    </div>
+ 
+                    <div class="marginTop">
+                         <p class="instInput">Business Registration</p>
+                         <p class="checkpointsTitle">Filename.pdf</p>
+                    </div>
+                 </div>
+
+                 <div class="activeBtn">
+                    <a class="customBtn" href="#">Active</a>
+                 </div>
+            </div>
+            <div class="editSuspend">
+                <a class="edit" href="instructor_edit_new.html">Edit</a>
+                <a class="suspend" href="#">Suspend Company</a>
+            </div>
+         </div>
+
+         <div class="instIdDetails">
+            <div class="instImg">
+                <img src="assets/images/student-id.png" alt="Student">
+            </div>
+
+            <div class="box insDetailsBox">
+                <div>
+                   <p class="instInput">Organization Assigned</p>
+                   <p class="checkpointsTitle extraSpace">Milinium CC</p>
+                   <p class="checkpointsTitle extraSpace">Milinium CC</p>
+                   <p class="checkpointsTitle extraSpace">Milinium CC</p>
+                   <p class="checkpointsTitle extraSpace">Milinium CC</p>
+                   <p class="checkpointsTitle extraSpace">Milinium CC</p>
+                   <p class="checkpointsTitle extraSpace">Milinium CC</p>
+                </div>
+                <div>
+                   <div>
+                     <p class="instInput">Start Date</p>
+                     <p class="checkpointsTitle">10/10/2020</p>
+                   </div>
+
+                   <div class="marginTop">
+                    <p class="instInput">Start Date</p>
+                    <p class="checkpointsTitle">10/10/2020</p>
+                  </div>
+                </div>
+            </div>
+         </div>
+
+     </div>
+  </section>
+  
+  <script src="assets/js-code/password-toggle.js"></script>
+  <script src="assets/js-code/custom.js"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/login.css">
+</head>
+<body>
+
+    <section class="loginSection">
+        <div class="loginInnerBody">
+            <div class="loginDiv">
+                <div class="accessLogo">
+                    <a href="#">Logo</a>
+                </div>
+                <div class="loginDetails">
+                    <h3 class="subHeading mobileCenter">Login to your account</h3>
+                    <form action="#" method="post">
+                        <div class="inputFieldMargin">
+                            <label class="customLabel" for="loginEmail">Email</label><br>
+                            <input class="customInput" type="email" id="loginEmail" name="loginEmail" placeholder="Type">
+                        </div>
+                        <div class="inputFieldMargin">
+                            <label class="customLabel" for="loginPassword">Password</label><br>
+                            <div class="passwordIconFixed">
+                                <input class="customInput" type="password" value="Type" id="loginPassword" name="loginPassword">
+                                <img class="passwordImg" src="assets/images/hide-password-icon.png" onclick="logintogglePassword()" alt="icon">
+                            </div>
+                        </div>
+                        <div class="forgotLink">
+                            <a href="forgot-password.html">Forget Password?</a>
+                        </div>
+                        <div class="submitBtnMargin">
+                            <input class="customBtn submitBtn" id="submitLogin" type="submit" value="Login">
+                        </div>
+                    </form>
+                </div>
+            </div>
+                <div class="loginImg"></div>
+        </div>
+    </section>
+
+<script src="assets/js-code/password-toggle.js"></script>
+</body>
+</html>

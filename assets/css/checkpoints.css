@@ -1,0 +1,169 @@
+/* dashboard Inner part design */
+.checkpointsDesign{
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    align-items: center;
+    overflow: hidden;
+}
+.checkpointsInner{
+    padding: 30px;
+    position: static;
+}
+.headingWithImg{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.headingWithImg img{
+   width: 40px;
+   height: 40px;
+}
+
+.threeBtn{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.threeBtn button{
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.checkpointsDiv{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.checkpointsDiv hr{
+    background-color: var(--ash-color);
+}
+
+.textWithIcon{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.textWithIcon button{
+   border: none;
+   background-color: transparent;
+   cursor: pointer;
+}
+
+.textWithIcon button img{
+    width: 30px;
+ }
+
+.checkpointsContent{
+    padding: 20px;
+}
+
+.checkpointsTitle{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: var(--body-text-color);
+}
+
+.instructor {
+    display: flex;
+    justify-content: space-between;
+}
+
+ .instInput{
+  color: var(--ash-color);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+ .instName{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.instDesp{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--body-text-color);
+    margin-top: 5px;
+}
+
+.marginTop{
+    margin-top: 20px;
+}
+
+.imgBox{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.imgBox img{
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 1200px){
+    .checkpointsDiv{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 992px){
+    .checkpointsDiv{
+        grid-template-columns: 1fr;
+    }
+
+    .threeBtn{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .headingWithImg {
+        margin-bottom: 30px;
+    }
+    
+}
+
+@media screen and (max-width: 768px){
+    .checkpointsDesign {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .headingWithImg {
+        margin-bottom: 10px;
+    }
+
+    .checkpointsInner {
+        padding: 20px;
+    }
+
+    .textWithIcon, .checkpointsContent{
+        padding: 10px 15px;
+    }
+}
+
+@media screen and (max-width: 550px){
+    .threeBtn{
+        grid-template-columns: 1fr;
+    }
+    .imgBox img {
+        width: 40px;
+    }
+
+}
+

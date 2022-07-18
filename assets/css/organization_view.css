@@ -1,0 +1,305 @@
+/* dashboard Inner part design */
+.dashboardDesign{
+    display: grid;
+    grid-template-columns: 240px auto;
+    position: relative;
+}
+
+.dashboardInner{
+    margin: 30px;
+    position: static;
+}
+.headingWithImg{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.headingWithImg img{
+   width: 40px;
+   height: 40px;
+}
+
+.titleWithIcon{
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.titleWithIcon img{
+   width: 20px;
+   height: 20px;
+   margin-top: -11px;
+}
+
+/* organizationDetailsBox desing css */
+.organizationDetailsBox{
+    display: grid;
+    grid-template-columns:  auto auto auto auto auto 1fr;
+    gap: 30px;
+}
+
+.extraPadding{
+    padding: 30px;
+}
+
+.organizationImg{
+    display: flex;
+    align-items: center;
+}
+
+.organizationImg img{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+}
+
+.activeBtn{
+    text-align: right;
+    margin-top: 5px;
+}
+
+.activeBtn .customBtn{
+    padding: 10px 30px;
+    font-size: 15px;
+    font-weight: 400;
+    border-radius: 30px;
+}
+
+.editSuspend{
+    text-align: end;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    text-decoration: underline;
+    margin-top: 5px;
+}
+
+.editSuspend .edit{
+    color: var(--button-bg-color);
+    margin-right: 15px;
+}
+
+.editSuspend .suspend{
+    color: #FF3F3F;;
+}
+
+.checkAssignBtn{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 0 10px 0;
+}
+
+.checkAssignBtn .customBtn{
+    padding: 10px 30px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+/* checkpoints div design  */
+.checkpointsDiv{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.checkpointsDiv hr{
+    background-color: var(--ash-color);
+}
+
+.textWithIcon{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.textWithIcon button{
+   border: none;
+   background-color: transparent;
+   cursor: pointer;
+}
+
+.textWithIcon button img{
+    width: 30px;
+ }
+
+.checkpointsContent{
+    padding: 20px;
+}
+
+.checkpointsTitle{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: var(--body-text-color);
+}
+
+.instructor {
+    display: flex;
+    justify-content: space-between;
+}
+
+ .instInput{
+  color: var(--ash-color);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+ .instName{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.instDesp{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--body-text-color);
+    margin-top: 5px;
+}
+
+.marginTop{
+    margin-top: 20px;
+}
+
+
+.imgBox {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    gap: 10px;
+}
+
+.imgBox img{
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.twoImgBox{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+}
+
+.twoImgBox img{
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+
+  /* responsive css */
+
+@media screen and (max-width: 1200px){
+    .checkpointsDiv{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 992px){
+    .checkpointsDiv{
+        grid-template-columns: 1fr;
+    }
+
+    .organizationDetailsBox{
+        grid-template-columns:  auto auto auto;
+        gap: 20px;
+    }
+
+    .headingWithImg {
+        margin-bottom: 20px;
+    }
+
+    .extraPadding {
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .checkpointsDesign {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .headingWithImg {
+        margin-bottom: 10px;
+    }
+
+    .checkpointsInner {
+        padding: 20px;
+    }
+
+    .textWithIcon, .checkpointsContent{
+        padding: 10px 15px;
+    }
+
+    .dashboardDesign {
+        grid-template-columns: 1fr;
+    }
+
+    .dashboardInner {
+        margin: 20px;
+    }
+
+    .headingWithImg {
+        margin-bottom: 0;
+        margin-top: 20px;
+    }
+
+    .studentOrganizations {
+        margin-top: 10px;
+}
+}
+
+@media screen and (max-width: 600px){
+    .organizationDetailsBox{
+        grid-template-columns:  auto auto;
+        gap: 20px;
+    }
+
+    .checkAssignBtn{
+        padding: 20px 0 0px 0;
+    }
+
+}
+
+@media screen and (max-width: 450px){
+    .organizationDetailsBox{
+        grid-template-columns:  1fr;
+        align-items: center;
+        text-align: center;
+    }
+    .organizationImg{
+       justify-content: center;
+    }
+
+    .activeBtn{
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .editSuspend{
+        text-align: center;
+    }
+
+    .checkAssignBtn{
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+}

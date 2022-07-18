@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --primary-color: #2F2F2F;
+    --secondary-color: #E5E5E5;
+    --tertiary-color: #FFFFFF;
+    --button-bg-color: #3CB179;
+    --button-text-color: #FFFFFF;
+    --button-border-radius: 10px;
+    --body-text-color: #000000;
+    --ash-color: #7A7A7A;
+    --input-field-bg-color: #F0F0F0;
+    --input-field-text-color: #7A7A7A;
+    --input-field-border-radius: 5px;
+    --body-font-family: 'Nunito', sans-serif;
+    --box-bg-color: #ffffff;
+    --box-text-color: #000000;
+    --box-border-radius: 20px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: var(--body-font-family);
+    background-color: var(--secondary-color);
+    color: var(--body-text-color);
+}
+
+a{
+    text-decoration: none;
+}
+
+.containerDiv{
+  width: 1200px;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
+.heading{
+    font-family: var(--body-font-family);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 44px;
+    color: var(--body-text-color);
+}
+
+.subHeading{
+    font-family: var(--body-font-family);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 33px;
+    color: var(--body-text-color);
+    margin-bottom: 10px;
+}
+
+.box{
+    background-color: var(--box-bg-color);
+    border-radius: var(--box-border-radius);
+    color: var(--box-text-color);
+    padding: 20px;
+}
+
+.inputFieldMargin{
+    margin-top: 20px;
+}
+
+.customInput{
+    background-color: var(--input-field-bg-color);
+    color: var(--input-field-text-color);
+    border-radius: var(--input-field-border-radius);
+    padding: 15px 20px;
+    border: none;
+    outline: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    width: 80%;
+    margin-top: 5px;
+}
+
+.headingWithImg{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.headingWithImg img{
+    width: 40px;
+    height: 40px;
+}
+
+/* suppress IE >= 10 native functionality that can show password */
+input[type="password"]::-ms-reveal {
+    display: none;
+  }
+
+.noPadding{
+    padding: 0;
+}
+
+.noBorderRadius{
+    border-radius: 0px;
+}
+
+.customLabel{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.customBtn{
+    background-color: var(--button-bg-color);
+    color: var(--button-text-color);
+    border-radius: var(--button-border-radius);
+    border: none;
+    outline: none;
+    padding: 15px 20px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.passwordIconFixed{
+    display: flex;
+    align-items: center;
+}
+
+.passwordImg {
+    margin-bottom: -3px;
+    margin-left: -45px;
+    z-index: 2;
+    position: relative;
+    cursor: pointer;
+}
+
+
+/* mobile Menu design */
+.mobileMenu{
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background-color: var(--primary-color);
+  color: var(--tertiary-color);
+}
+
+.menuToggleBar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.menuToggleBar button{
+    border: none;
+    background-color: transparent;
+    font-size: 25px;
+    color: var(--tertiary-color);
+    cursor: pointer;
+}
+
+
+.menuToggleBar a{
+    text-decoration: none;
+    color: var(--tertiary-color);
+}
+
+
+
+.mobileMenuDiv{
+    padding: 10px 30px;
+}
+
+.mobileMenuBar{
+    display: grid;
+    align-items: center;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+}
+
+.mobileUserImg{
+    text-align: right;
+}
+
+.mobileUserImg img{
+    width: 30px;
+    height: 30px;
+}
+
+.closeDiv{
+    margin-top: -13px;
+    text-align: right;
+    display: none;
+}
+
+.closeDiv a{
+    font-size: 30px;
+    color: #FFFFFF;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/* menubar custom design */
+.menuBar{
+    background-color: var(--primary-color);
+    padding: 20px 30px;
+    height: 100vh;
+    width: 240px;
+    z-index: 99999999;
+    position: relative;
+}
+
+.fixedTopPosition{
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.menuBar .logo{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.menuBar .logo a{
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 44px;
+    color: var(--tertiary-color);
+}
+
+.menuInner ul{
+    list-style: none;
+}
+
+.menuLink{
+    padding-bottom: 30px;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+
+.menuLink a{
+    text-decoration: none;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 15px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 33px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.menuLink a img{
+   width: 20px;
+   height: 20px;
+}
+
+.active, .menuLink:hover{
+    opacity: 1;
+}
+
+.mobileMenu{
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    #mobileMenuShow{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .customInput{
+        padding: 10px;
+        font-size: 15px;
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .customLabel {
+        font-size: 16px;
+    }
+
+    .customBtn{
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    .subHeading{
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .heading{
+        font-size: 25px;
+    }
+
+    .mobileMenuDiv {
+        padding: 10px 10px;
+    }
+
+    .passwordImg {
+        margin-left: -35px;
+    }
+
+    .fixedTopPosition{
+        z-index: 200;
+    }
+
+    .mobileMenu {
+        z-index: 20;
+    }
+
+    .headingWithImg{
+        text-align: center;
+        display: inline;
+    }
+
+    .headingWithImg .hideImg{
+        display: none;
+    }
+
+    .menuBar{
+        display: none;
+        z-index: 110;
+        transition: 0.3s;
+    }
+
+    .mobileMenu{
+        display: block;
+    }
+
+    .closeDiv{
+        display: block;
+    }
+
+    .menuLink{
+        padding-bottom: 10px;
+    }
+
+    .dashboardInner{
+        margin-top: 0px;
+    }
+
+    .dashboardInner {
+        margin-top: 0px !important;
+    }
+
+    .mobileMenuDiv {
+        padding: 10px 20px;
+    }
+}
+

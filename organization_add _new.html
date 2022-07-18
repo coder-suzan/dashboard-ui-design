@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organizations - Add new</title>
+    <!-- custom css -->
+    <link rel="stylesheet" href="assets/css/base.css">
+    <!-- dashboard css desing file -->
+    <link rel="stylesheet" href="assets/css/organization_add _new.css">
+</head>
+<body>
+    <section class="mobileMenu">
+       <div class="mobileMenuDiv">
+          <div class="mobileMenuBar">
+              <div class="menuToggleBar">
+                <button class="openbtn" onclick="openNav()"> ☰</button> <a href="#">Logo</a>
+              </div>
+    
+              <div class="mobileUserImg">
+                <img src="assets/images/user-img.png" alt="user">
+              </div>
+          </div>
+       </div>
+    </section>
+
+  <section class="addCheckpointsDesign">
+     <div class="fixedDiv">
+        <div class="menuBar fixedTopPosition" id="mobileMenuShow">
+            <div class="closeDiv">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            </div>
+            <div class="logo">
+                <a href="#">Logo</a>
+            </div>
+            
+            <div class="menuInner">
+                <ul id="activeMenu">
+                    <li class="menuLink">
+                        <a href="dashboard.html">
+                            <img src="assets/images/dashboard.png" alt="dashboard">
+                            <span> Dashboard </span>  
+                        </a>
+                    </li>
+                    <li class="menuLink active">
+                        <a href="organizations.html">
+                                <img src="assets/images/Organizations.png" alt="Organizations">
+                                <span>Organizations</span>   
+                            </a>
+                    </li>
+                    <li class="menuLink"> 
+                        <a href="instructor.html">
+                             <img src="assets/images/Instructor.png" alt="Instructor">                   
+                             <span>Instructor</span>   
+                        </a>
+                    </li>
+                    <li class="menuLink">
+                        <a href="student.html">
+                             <img src="assets/images/Student.png" alt="Student">                         
+                             <span>Student</span>   
+                        </a>
+                    </li>
+                    <li class="menuLink">
+                        <a href="checkpoints.html">
+                            <img src="assets/images/Checkpoints.png" alt="Checkpoints">                                                  
+                             <span>Checkpoints</span>   
+                        </a>
+                    </li>
+                </ul>
+            </div>
+    
+         </div>
+     </div>
+
+     <div class="addCheckpointsInner">
+         <div class="headingWithImg">
+            <a href="organizations.html">
+                <div class="titleWithIcon">
+                    <img src="assets/images/left-arrow.png" alt="icon">
+                    <h2 class="subHeading">Add new organizations</h2>
+                </div>
+            </a>
+            <img class="hideImg" src="assets/images/user-img.png" alt="user">
+         </div>
+
+         <div class="checkpointsDiv">
+            <div class="box noPadding">
+                <div class="textWithIcon">
+                    <h4 class="checkpointsTitle">Organization Details</h4>
+                </div><hr>
+
+                <div class="avatarWithInput">
+                    <div class="avatar-upload">
+                        <div class="avatar-edit">
+                            <input type='file' id="imageUploadOne" accept=".png, .jpg, .jpeg" />
+                            <label for="imageUploadOne"></label>
+                        </div>
+                        <div class="avatar-preview">
+                            <div id="imagePreviewOne" style="background-image: url('assets/images/uploaded-image-preview.png');">
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <label class="customLabel" for="name">Name</label><br>
+                        <input class="customInput uploadImgInput" type="text" id="name" name="name" placeholder="Type">
+                    </div>
+                </div>
+
+                <div class="checkpointsContent"> 
+                    <div class="addCheckpointsInput">
+                        <form action="#" method="post">
+
+                           <div class="completionForm">
+                                <div>
+                                    <div class="inputFieldMargin">
+                                        <label class="customLabel" for="Username">Username</label><br>
+                                        <input class="customInput smallWidth" type="text" id="Username" name="Username" placeholder="Type">
+                                    </div>
+            
+                                    <div class="inputFieldMargin">
+                                        <label class="customLabel" for="phoneNumber">Phone Number</label><br>
+                                        <input class="customInput smallWidth" type="text" id="phoneNumber" name="phoneNumber" placeholder="Type">
+                                    </div>
+
+                                    <div class="inputFieldMargin">
+                                        <div id="form">
+                                            <label class="customLabel" for="time">Time</label><br>
+                                            <div class="file-upload-wrapper" data-text="filename.pdf">
+                                              <input class="customInput" name="file-upload-field" type="file" class="file-upload-field" value="">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="marginTopBottom buttonFixed">
+                                        <input class="customBtn submitBtn" id="completionBtn" name="completionBtn" type="submit" value="Add Now">
+                                    </div>
+                                </div>
+
+                            <div class="inputFieldMargin selectDiv">
+                              <div class="marginFixed">
+                                <label class="customLabel" for="address">Address</label><br>
+                                <input class="customInput smallWidth" type="text" id="address" name="address" placeholder="Type">
+                             </div>
+                             <div class="inputFieldMargin">
+                                <label class="customLabel" for="emailAddress">Email</label><br>
+                                <input class="customInput smallWidth" type="email" id="emailAddress" name="emailAddress" placeholder="Type">
+                            </div>
+
+                            <div class="inputFieldMargin">
+                                <label class="customLabel" for="loginPassword">Password</label><br>
+                                <div class="passwordIconFixed">
+                                    <input class="customInput smallWidth" type="password" value="Type" id="loginPassword" name="loginPassword">
+                                    <img class="passwordImg" src="assets/images/hide-password-icon.png" onclick="logintogglePassword()" alt="icon">
+                                </div>   
+                            </div>
+
+                            <div class="marginTopBottom mobileBSubmitBtn">
+                                <input class="customBtn submitBtn" id="completionBtn" name="completionBtn" type="submit" value="Add Now">
+                            </div>
+
+                           </div>
+                        </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+         </div>
+
+     </div>
+  </section>
+  
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="assets/js-code/password-toggle.js"></script>
+  <script src="assets/js-code/image-upload-preview.js"></script>
+  <script src="assets/js-code/custom.js"></script>
+  <script>
+    $("#form").on("change", ".file-upload-field", function(){ 
+    $(this).parent(".file-upload-wrapper").attr("data-text", $(this).val().replace(/.*(\/|\\)/, '') );
+  });
+ </script>
+</body>
+</html>

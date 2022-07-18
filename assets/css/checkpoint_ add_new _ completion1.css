@@ -1,0 +1,180 @@
+/* dashboard Inner part design */
+.addCheckpointsDesign{
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    align-items: center;
+    overflow: hidden;
+}
+
+.addCheckpointsInner{
+    padding: 30px;
+    position: static;
+}
+
+
+.titleWithIcon{
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.titleWithIcon img{
+   width: 20px;
+   height: 20px;
+   margin-top: -11px;
+}
+
+.checkpointsDiv{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.checkpointsDiv hr{
+    background-color: var(--ash-color);
+}
+
+.textWithIcon{
+    padding: 20px;
+}
+
+#completionBtn{
+    font-size: 15px;
+    font-weight: 500;
+    padding: 12px 30px;
+}
+
+.checkpointsContent{
+    padding: 20px;
+}
+
+.checkpointsTitle{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: var(--body-text-color);
+}
+
+.completionForm{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30;
+}
+
+.uploadDiv{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.customFileUpload {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 130px;
+    height: 140px;
+    align-items: center;
+    background: #DBFFEE;
+    border: 1px solid #3CB179;
+    border-radius: 10px;
+    color: #000000;
+    cursor: pointer;
+    padding: 30px 60px;
+    margin: 20px 0;
+  }
+
+  .uploadIcon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--button-bg-color);
+    padding: 5px;
+    border-radius: 30px;
+    margin-bottom: 15px;
+  }
+
+  .uploadIcon img{
+    width: 15px;
+  }
+
+
+  .customFileUpload span{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 27px;
+    color: #000000;
+  }
+
+.selectDiv{
+    display: flex;
+    flex-direction: column;
+}
+
+.smallWidth{
+    width: 80%;
+}
+
+.marginTopBottom{
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+@media screen and (max-width: 992px) {
+    .linkPage{
+        margin-bottom: 20px;
+    }    
+}
+
+@media screen and (max-width: 768px) {
+    .addCheckpointsDesign{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .addCheckpointsInner{
+        padding: 20px;
+    }
+
+    .linkPage{
+        margin-bottom: 0px;
+    }    
+
+    .textWithIcon {
+        padding: 15px;
+    }
+
+    .checkpointsContent {
+        padding: 15px;
+    }
+
+    .smallWidth {
+        width: 90%;
+    }
+
+    .inputFieldMargin {
+        margin-top: 10px;
+    }
+
+    .customFileUpload {
+        margin: 15px 0;
+        width: 100px;
+        height: 100px;
+        padding: 15px 15px;
+    }
+}
+
+@media screen  and (max-width: 600px){
+    .completionForm{
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 0;
+    }
+
+    .smallWidth{
+        width: 100%;
+    }
+}

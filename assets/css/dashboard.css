@@ -1,0 +1,328 @@
+/* dashboard Inner part design */
+.dashboardDesign{
+    display: grid;
+    grid-template-columns: 240px auto;
+    position: relative;
+}
+
+.dashboardInner{
+    padding: 30px;
+    position: static;
+}
+.headingWithImg{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.headingWithImg img{
+   width: 40px;
+   height: 40px;
+}
+
+.fourBox{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+@media screen and (max-width: 992px) {
+    .fourBox{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.fourBox .fourBoxInner{
+    padding: 20px;
+    border-radius: 5px;
+    color: var(--tertiary-color);
+}
+
+.fourBox .fourBoxInner h3{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 33px;
+    color: var(--tertiary-color);
+}
+
+.fourBox .fourBoxInner b{
+    font-weight: 400;
+    font-size: 25px;
+}
+
+.yellowBox{
+    background: #F4AE1F;
+}
+
+.skyBox{
+    background: #3490FB;
+}
+
+.blueBox{
+    background: #017EBE;
+}
+
+.greenBox{
+    background: #3CB179;
+}
+
+
+
+/* student and organizations section */
+.studentOrganizations{
+    position: relative;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+}
+
+.courseIcon{
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    background: #017EBE;
+    display: inline;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.course{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.course:last-child{
+    margin-bottom: 0;
+}
+
+.courseInner{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px
+}
+.courseIcon img{
+    width: 20px;
+    height: 20px;
+}
+
+.courseContent .courseTitle{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+ }
+
+ .courseContent .date{
+    font-weight: 400;
+    font-size: 12px;
+    color: var(--ash-color);
+ }
+
+ .course .coursePrice{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+ }
+
+ .organizationInner{
+    padding: 0 0 20px;
+    position: relative;
+ }
+
+ /* table style */
+
+ .responsiveTable{
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+  
+  .tableStyle{
+      border-collapse: collapse;
+      width: 100%;
+    }
+  
+    .tableStyle th:first-child { 
+      -khtml-border-radius: 0 20px 20px 0;
+      -moz-border-radius: 0 20px 20px 0;
+      -ms-border-radius: 0 20px 20px 0;
+      -o-border-radius: 0 20px 20px 0;
+      -webkit-border-radius: 0 20px 20px 0;
+      border-radius: 20px 0 0 20px;
+    }
+  
+    .tableStyle th:last-child{ 
+      -khtml-border-radius: 0 20px 20px 0;
+      -moz-border-radius: 0 20px 20px 0;
+      -ms-border-radius: 0 20px 20px 0;
+      -o-border-radius: 0 20px 20px 0;
+      -webkit-border-radius: 0 20px 20px 0;
+      border-radius: 0 20px 20px 0;
+    }
+  
+    .tableStyle thead{
+      padding: 10px 20px;
+      background-color: #F3F3F3;
+      color: #000000;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      border-radius: 20px !important;
+      width: 100%;
+    }
+    
+  th {
+      text-align: left;
+      padding:  15px 20px;
+    }
+  
+    td{
+      text-align: left;
+      padding: 11px 20px 10px 20px;
+    } 
+  
+    .tableStyle tbody{
+     color: var(--ash-color);
+     font-size: 14px;
+    }
+
+    .tableTopMargin{
+        margin-top: 15px;
+    }
+
+  /* responsive css */
+  @media screen and (max-width: 992px) {
+
+    .fourBox{
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+    .studentOrganizations{
+        grid-template-columns: 1fr;
+        gap: 20px;
+        margin-top: 20px;
+    }
+
+    .fourBox .fourBoxInner h3{
+        font-size: 16px;
+    }
+    
+    .fourBox .fourBoxInner b{
+        font-size: 20px;
+    }
+
+    .fourBox .fourBoxInner {
+        padding: 10px;
+    }
+
+    .headingWithImg {
+        margin-bottom: 20px;
+    }
+
+
+}
+
+@media screen and (max-width: 768px) {
+    .dashboardDesign {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+ /* mobile table data design */
+ @media screen and (max-width: 550px) {
+
+    .organizationInner{
+        padding: 0;
+    }
+
+    .box{
+        border-radius: 0;
+    }
+
+    .tableTopMargin{
+        display: none;
+    }
+
+    .tableHeader{
+        display: none;
+    }
+
+    tbody tr:last-child{
+        border-bottom: 2px solid #ccc; 
+    }
+
+	/* Force table to not be like tables anymore */
+	table, thead, tbody, th, td, tr { 
+		display: block; 
+	}
+	
+	/* Hide table headers (but not display: none;, for accessibility) */
+	thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	
+	tr { 
+        border: 1px solid #ccc; 
+        border-left: none;
+        border-right: none;
+    }
+	
+	td { 
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 30%;
+	}
+
+    th{
+        padding: 10px;
+    }
+	
+	td:before { 
+		/* Now like a table header */
+		position: absolute;
+        top: 10px;
+        left: 7px;
+		width: 60%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+        color: #000000;
+	}
+
+	/* Label the data */
+	td:nth-of-type(1):before { content: "Name"; }
+	td:nth-of-type(2):before { content: "Address"; }
+	td:nth-of-type(3):before { content: "Email"; }
+
+    td:nth-of-type(1):before, td:nth-of-type(2):before, td:nth-of-type(3):before{
+        font-size: 16px;
+        font-weight: 500;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .fourBox {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .dashboardInner {
+       padding: 20px;
+    }
+
+}

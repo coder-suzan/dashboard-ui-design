@@ -1,0 +1,396 @@
+/* dashboard Inner part design */
+.addCheckpointsDesign{
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    align-items: center;
+    overflow: hidden;
+}
+
+.addCheckpointsInner{
+    padding: 30px;
+    position: static;
+}
+
+
+.titleWithIcon{
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.titleWithIcon img{
+   width: 20px;
+   height: 20px;
+   margin-top: -11px;
+}
+
+.avatarWithInput{
+    display: grid;
+    grid-template-columns: 100px auto;
+    align-items: center;
+    gap: 40px;
+    padding: 20px;
+}
+
+.uploadImgInput{
+    width: 55%;
+}
+
+.marginFixed{
+    margin-top: 0;
+}
+/* upload image with preview */
+.avatar-upload {
+    position: relative;
+    max-width: 205px;
+}
+.avatar-upload .avatar-edit {
+    position: absolute;
+    right: 12px;
+    z-index: 1;
+    top: 10px;
+}
+.avatar-upload .avatar-edit input {
+    display: none;
+}
+
+.avatar-upload .avatar-edit input + label {
+    display: inline-block;
+    position: absolute;
+    top: 58px;
+    left: -18px;
+    width: 30px;
+    height: 30px;
+    margin-bottom: 0;
+    border-radius: 100%;
+    background: var(--button-bg-color);
+    border: 1px solid transparent;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+    font-weight: normal;
+    transition: all 0.2s ease-in-out;
+}
+.avatar-upload .avatar-edit input + label:hover {
+    background: #03a747;
+}
+.avatar-upload .avatar-edit input + label:after {
+    content: "";
+    background-image: url("../images/plus-icon.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 4px;
+    left: 0px;
+    right: 0;
+    text-align: center;
+    margin: auto;
+}
+.avatar-upload .avatar-preview {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    border-radius: 100%;
+    box-shadow: 0px 0px 50px 5px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--button-bg-color);
+}
+
+.avatar-upload .avatar-preview
+div {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+.checkpointsDiv{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.checkpointsDiv hr{
+    background-color: var(--ash-color);
+}
+
+.textWithIcon{
+    padding: 20px;
+}
+
+.submitBtn{
+    font-size: 15px;
+    font-weight: 500;
+    padding: 12px 30px;
+}
+
+.checkpointsContent{
+    padding: 20px;
+}
+
+.checkpointsTitle{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: var(--body-text-color);
+}
+
+.completionForm{
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+    gap: 30;
+}
+
+.uploadDiv{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.customFileUpload {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 130px;
+    height: 140px;
+    align-items: center;
+    background: #DBFFEE;
+    border: 1px solid #3CB179;
+    border-radius: 10px;
+    color: #000000;
+    cursor: pointer;
+    padding: 30px 60px;
+    margin: 20px 0;
+  }
+
+  .uploadIcon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--button-bg-color);
+    padding: 5px;
+    border-radius: 30px;
+    margin-bottom: 15px;
+  }
+
+  .uploadIcon img{
+    width: 15px;
+  }
+
+
+  .customFileUpload span{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 27px;
+    color: #000000;
+  }
+
+.selectDiv{
+    display: flex;
+    flex-direction: column;
+}
+
+.smallWidth{
+    width: 80%;
+}
+
+.marginTopBottom{
+    margin-top: 100px;
+    margin-bottom: 60px;
+}
+
+/* file upload style */
+.file-upload-wrapper {
+    position: relative;
+    width: 100%;
+    height: 60px;
+}
+
+
+.file-upload-wrapper:after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    pointer-events: none;
+    background-color: var(--input-field-bg-color);
+    color: var(--input-field-text-color);
+    border-radius: var(--input-field-border-radius);
+    padding: 15px 0px 15px 15px;
+    border: none;
+    z-index: 20;
+    outline: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    width: 77%;
+    margin-top: 5px;
+}
+
+.file-upload-wrapper:before {
+    content: "Choose File";
+    position: absolute;
+    top: 15px;
+    right: 115px;
+    display: inline-block;
+    background: #4daf7c;
+    color: #fff;
+    z-index: 25;
+    pointer-events: none;
+    font-size: 14px;
+    padding: 6px 20px;
+    border-radius: 10px;
+}
+
+.file-upload-wrapper:hover:before {
+    background: #3d8c63;
+}
+
+.file-upload-wrapper input {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 99;
+    margin: 0;
+    padding: 0;
+    display: block;
+    cursor: pointer;
+    width: 100%;
+}
+
+.mobileBSubmitBtn{
+    display: none;
+}
+
+@media screen and (max-width: 992px) {
+    .linkPage{
+        margin-bottom: 20px;
+    }    
+
+    .smallWidth{
+        width: 100%;
+    }
+
+    .completionForm{
+        gap: 20px;
+    }
+
+    .file-upload-wrapper:after {
+        width: 95%;
+    }
+
+    .file-upload-wrapper:before {
+        top: 17px;
+        right: 4px;
+        font-size: 13px;
+        padding: 5px 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .addCheckpointsDesign{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .addCheckpointsInner{
+        padding: 20px;
+    }
+
+    .linkPage{
+        margin-bottom: 0px;
+    }    
+
+    .textWithIcon {
+        padding: 15px;
+    }
+
+    .checkpointsContent {
+        padding: 15px;
+    }
+
+    .smallWidth {
+        width: 90%;
+    }
+
+    .uploadImgInput{
+        width: 100%;
+    }
+
+    .inputFieldMargin {
+        margin-top: 10px;
+    }
+
+    .customFileUpload {
+        margin: 15px 0;
+        width: 100px;
+        height: 100px;
+        padding: 15px 15px;
+    }
+
+    .file-upload-wrapper:after {
+        width: 85%;
+        padding: 10px 0px 15px 15px;
+    }
+
+    .file-upload-wrapper:before {
+        right: 32px;
+        top: 13px;
+  }
+}
+
+@media screen  and (max-width: 600px){
+    .completionForm{
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 10px;
+    }
+
+    .marginFixed{
+        margin-top: 37px;
+    }
+
+    .buttonFixed{
+        display: none;
+    }
+
+    .marginTopBottom{
+        margin-top: 30px;
+    }
+
+    .mobileBSubmitBtn{
+        display: block;
+    }
+
+    .completionForm{
+        grid-template-columns: 1fr;
+    }
+    .smallWidth{
+        width: 100%;
+    }
+
+    .file-upload-wrapper:after {
+        width: 100%;
+   }
+
+  .file-upload-wrapper:after {
+    width: 96%;
+  }
+
+  .file-upload-wrapper:before {
+    right: 10px;
+  }
+}

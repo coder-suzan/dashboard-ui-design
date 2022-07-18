@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <!-- custom css -->
+    <link rel="stylesheet" href="assets/css/base.css">
+    <!-- dashboard css desing file -->
+    <link rel="stylesheet" href="assets/css/dashboard.css">
+</head>
+<body>
+    <section class="mobileMenu">
+       <div class="mobileMenuDiv">
+          <div class="mobileMenuBar">
+              <div class="menuToggleBar">
+                <button class="openbtn" onclick="openNav()"> ☰</button> <a href="#">Logo</a>
+              </div>
+    
+              <div class="mobileUserImg">
+                <img src="assets/images/user-img.png" alt="user">
+              </div>
+          </div>
+       </div>
+    </section>
+
+  <section class="dashboardDesign">
+     <div class="fixedDiv">
+        <div class="menuBar fixedTopPosition" id="mobileMenuShow">
+            <div class="closeDiv">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            </div>
+            <div class="logo">
+                <a href="#">Logo</a>
+            </div>
+            
+            <div class="menuInner">
+                <ul id="activeMenu">
+                    <li class="menuLink active">
+                        <a href="dashboard.html">
+                            <img src="assets/images/dashboard.png" alt="dashboard">
+                            <span> Dashboard </span>  
+                        </a>
+                    </li>
+                    <li class="menuLink">
+                        <a href="organizations.html">
+                                <img src="assets/images/Organizations.png" alt="Organizations">
+                                <span>Organizations</span>   
+                            </a>
+                    </li>
+                    <li class="menuLink"> 
+                        <a href="instructor.html">
+                             <img src="assets/images/Instructor.png" alt="Instructor">                   
+                             <span>Instructor</span>   
+                        </a>
+                    </li>
+                    <li class="menuLink">
+                        <a href="student.html">
+                             <img src="assets/images/Student.png" alt="Student">                         
+                             <span>Student</span>   
+                        </a>
+                    </li>
+                    <li class="menuLink">
+                        <a href="checkpoints.html">
+                            <img src="assets/images/Checkpoints.png" alt="Checkpoints">                                                  
+                             <span>Checkpoints</span>   
+                        </a>
+                    </li>
+                </ul>
+            </div>
+    
+         </div>
+     </div>
+
+     <div class="dashboardInner">
+         <div class="headingWithImg">
+            <h2 class="heading">Dashboard</h2>
+            <img class="hideImg" src="assets/images/user-img.png" alt="user">
+         </div>
+
+         <div class="fourBox">
+            <div class="yellowBox fourBoxInner">
+                <h3>Organziations</h3>
+                <b>15</b>
+            </div>
+
+            <div class="skyBox fourBoxInner">
+                <h3>Instrcutors</h3>
+                <b>54548</b>
+            </div>
+
+            <div class="blueBox fourBoxInner">
+                <h3>Instrcutors</h3>
+                <b>251</b>
+            </div>
+
+            <div class="greenBox fourBoxInner">
+                <h3>Checkpoints</h3>
+                <b>2545</b>
+            </div>
+         </div>
+
+         <div class="studentOrganizations">
+            <div class="studentDiv">
+                <h3 class="subHeading">Students</h3>
+                <div class="studentDivInner box">
+                    <div class="course">
+                        <div class="courseInner">
+                            <div class="courseIcon">
+                               <img src="assets/images/courseIcon.png" alt="">
+                            </div>
+                            <div class="courseContent">
+                                <h4 class="courseTitle">Course Name</h4>
+                                <span class="date">22 / 02 / 2022</span>
+                            </div>
+                        </div>
+                        <div class="coursePrice">
+                            <b>750$</b>
+                        </div>
+                    </div>
+
+                    <div class="course">
+                        <div class="courseInner">
+                            <div class="courseIcon">
+                               <img src="assets/images/courseIcon.png" alt="">
+                            </div>
+                            <div class="courseContent">
+                                <h4 class="courseTitle">Course Name</h4>
+                                <span class="date">22 / 02 / 2022</span>
+                            </div>
+                        </div>
+                        <div class="coursePrice">
+                            <b>750$</b>
+                        </div>
+                    </div>
+
+
+                    <div class="course">
+                        <div class="courseInner">
+                            <div class="courseIcon">
+                               <img src="assets/images/courseIcon.png" alt="">
+                            </div>
+                            <div class="courseContent">
+                                <h4 class="courseTitle">Course Name</h4>
+                                <span class="date">22 / 02 / 2022</span>
+                            </div>
+                        </div>
+                        <div class="coursePrice">
+                            <b>750$</b>
+                        </div>
+                    </div>
+
+                    <div class="course">
+                        <div class="courseInner">
+                            <div class="courseIcon">
+                               <img src="assets/images/courseIcon.png" alt="">
+                            </div>
+                            <div class="courseContent">
+                                <h4 class="courseTitle">Course Name</h4>
+                                <span class="date">22 / 02 / 2022</span>
+                            </div>
+                        </div>
+                        <div class="coursePrice">
+                            <b>750$</b>
+                        </div>
+                    </div>
+
+                    <div class="course">
+                        <div class="courseInner">
+                            <div class="courseIcon">
+                               <img src="assets/images/courseIcon.png" alt="">
+                            </div>
+                            <div class="courseContent">
+                                <h4 class="courseTitle">Course Name</h4>
+                                <span class="date">22 / 02 / 2022</span>
+                            </div>
+                        </div>
+                        <div class="coursePrice">
+                            <b>750$</b>
+                        </div>
+                    </div>
+
+                    <div class="course">
+                        <div class="courseInner">
+                            <div class="courseIcon">
+                               <img src="assets/images/courseIcon.png" alt="">
+                            </div>
+                            <div class="courseContent">
+                                <h4 class="courseTitle">Course Name</h4>
+                                <span class="date">22 / 02 / 2022</span>
+                            </div>
+                        </div>
+                        <div class="coursePrice">
+                            <b>750$</b>
+                        </div>
+                    </div>
+
+                    <div class="course">
+                        <div class="courseInner">
+                            <div class="courseIcon">
+                               <img src="assets/images/courseIcon.png" alt="">
+                            </div>
+                            <div class="courseContent">
+                                <h4 class="courseTitle">Course Name</h4>
+                                <span class="date">22 / 02 / 2022</span>
+                            </div>
+                        </div>
+                        <div class="coursePrice">
+                            <b>750$</b>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="organizationDiv">
+                <h3 class="subHeading">Oragnization</h3>
+                <div class="box organizationInner">
+
+                    <div class="responsiveTable">
+                        <table class="tableStyle">
+                                <thead class="tableHeader">
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Address</th>
+                                        <th>Email</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="tableTopMargin"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>McDonald's</td>
+                                        <td>3891 Ranchview Dr. Richardson, </td>
+                                        <td>sara.cruz@example.com</td>
+                                    </tr>
+        
+                                    <tr>
+                                        <td>Starbucks</td>
+                                        <td>8502 Preston Rd. Inglewood,</td>
+                                        <td>felicia.reid@example.com</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Starbucks</td>
+                                        <td>2118 Thornridge Cir. Syracuse, </td>
+                                        <td>jackson.graham@example.com</td>
+                                    </tr>
+        
+                                    <tr>
+                                        <td>Facebook</td>
+                                        <td>4140 Parker Rd. Allentown</td>
+                                        <td>michelle.rivera@example.com</td>
+                                    </tr>
+        
+                                    <tr>
+                                        <td>Johnson & Johnson</td>
+                                        <td>3891 Ranchview Dr. Richardson, </td>
+                                        <td>willie.jennings@example.com</td>
+                                    </tr>
+        
+                                    <tr>
+                                        <td>Starbucks</td>
+                                        <td>8502 Preston Rd. Inglewood,</td>
+                                        <td>felicia.reid@example.com</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Louis Vuitton</td>
+                                        <td>3517 W. Gray St. Utica,</td>
+                                        <td>michael.mitc@example.com</td>
+                                    </tr>
+        
+                                    <tr>
+                                        <td>Bank of America</td>
+                                        <td>4517 Washington Ave. </td>
+                                        <td>kenzi.lawson@example.com</td>
+                                    </tr>
+        
+                                    <tr>
+                                        <td>The Walt Disney Company</td>
+                                        <td>4517 Washington Ave.</td>
+                                        <td>debbie.baker@example.com</td>
+                                    </tr>
+                                </tbody>
+                        </table>
+                    </div>
+
+                </div>
+            </div>
+         </div>
+     </div>
+  </section>
+
+  <script src="assets/js-code/custom.js"></script>
+</body>
+</html>

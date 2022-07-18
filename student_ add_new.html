@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student - Add new</title>
+    <!-- custom css -->
+    <link rel="stylesheet" href="assets/css/base.css">
+    <!-- dashboard css desing file -->
+    <link rel="stylesheet" href="assets/css/instructor_add_new.css">
+</head>
+<body>
+    <section class="mobileMenu">
+       <div class="mobileMenuDiv">
+          <div class="mobileMenuBar">
+              <div class="menuToggleBar">
+                <button class="openbtn" onclick="openNav()"> ☰</button> <a href="#">Logo</a>
+              </div>
+    
+              <div class="mobileUserImg">
+                <img src="assets/images/user-img.png" alt="user">
+              </div>
+          </div>
+       </div>
+    </section>
+
+  <section class="addCheckpointsDesign">
+     <div class="fixedDiv">
+        <div class="menuBar fixedTopPosition" id="mobileMenuShow">
+            <div class="closeDiv">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            </div>
+            <div class="logo">
+                <a href="#">Logo</a>
+            </div>
+            
+            <div class="menuInner">
+                <ul id="activeMenu">
+                    <li class="menuLink">
+                        <a href="dashboard.html">
+                            <img src="assets/images/dashboard.png" alt="dashboard">
+                            <span> Dashboard </span>  
+                        </a>
+                    </li>
+                    <li class="menuLink">
+                        <a href="organizations.html">
+                                <img src="assets/images/Organizations.png" alt="Organizations">
+                                <span>Organizations</span>   
+                            </a>
+                    </li>
+                    <li class="menuLink"> 
+                        <a href="instructor.html">
+                             <img src="assets/images/Instructor.png" alt="Instructor">                   
+                             <span>Instructor</span>   
+                        </a>
+                    </li>
+                    <li class="menuLink active">
+                        <a href="student.html">
+                             <img src="assets/images/Student.png" alt="Student">                         
+                             <span>Student</span>   
+                        </a>
+                    </li>
+                    <li class="menuLink">
+                        <a href="checkpoints.html">
+                            <img src="assets/images/Checkpoints.png" alt="Checkpoints">                                                  
+                             <span>Checkpoints</span>   
+                        </a>
+                    </li>
+                </ul>
+            </div>
+    
+         </div>
+     </div>
+
+     <div class="addCheckpointsInner">
+         <div class="headingWithImg">
+            <a href="student.html">
+                <div class="titleWithIcon">
+                    <img src="assets/images/left-arrow.png" alt="icon">
+                    <h2 class="subHeading">Add new student</h2>
+                </div>
+            </a>
+            <img class="hideImg" src="assets/images/user-img.png" alt="user">
+         </div>
+
+         <div class="checkpointsDiv">
+            <div class="box noPadding">
+                <div class="textWithIcon">
+                    <h4 class="checkpointsTitle">Student Details</h4>
+                </div><hr>
+
+                <div class="avatarText">
+                   <div class="avatarWithInput">
+                        <div class="avatar-upload">
+                            <div class="avatar-edit">
+                                <input type='file' id="imageUploadOne" accept=".png, .jpg, .jpeg" />
+                                <label for="imageUploadOne"></label>
+                            </div>
+                            <div class="avatar-preview">
+                                <div id="imagePreviewOne" style="background-image: url('assets/images/student-img.png');">
+                                </div>
+                            </div>
+                        </div>
+                   </div>
+
+                </div>
+
+                <div class="checkpointsContent"> 
+                    <div class="addCheckpointsInput">
+                        <form action="#" method="post">
+
+                           <div class="completionForm">
+                                <div>
+                                    <div class="inputFieldMargin">
+                                        <label class="customLabel" for="addStudentname">Name</label><br>
+                                        <input class="customInput smallWidth" type="text" id="addStudentname" name="addStudentname" placeholder="Type">
+                                    </div>
+
+                                    <div class="inputFieldMargin">
+                                        <label class="customLabel" for="studentParentName">Name of parent</label><br>
+                                        <input class="customInput smallWidth" type="text" id="studentParentName" name="studentParentName" placeholder="Type">
+                                    </div>
+
+                                    <div class="inputFieldMargin">
+                                        <label class="customLabel" for="studentPhoneNumber">Phone Number</label><br>
+                                        <input class="customInput smallWidth" type="text" id="studentPhoneNumber" name="studentPhoneNumber" placeholder="Type">
+                                    </div>
+
+                                    <div class="inputFieldMargin">
+                                        <label class="customLabel" for="studentDateOfBirth">Date of birth</label><br>
+                                        <div class="datePicker">
+                                            <input class="customInput smallWidth" type="date" id="studentDateOfBirth" name="studentDateOfBirth" >
+                                        </div>
+                                    </div>
+
+                                    <div class="inputFieldMargin">
+                                        <label class="customLabel" for="studentAccessDate">Access Validity Start Date</label><br>
+                                        <div class="datePicker">
+                                            <input class="customInput smallWidth" type="date" id="studentAccessDate" name="studentAccessDate" >
+                                        </div>
+                                    </div>
+
+                                    <div class="inputFieldMargin">
+                                        <label class="customLabel" for="studentStatus">Status</label><br>
+                                        <div class="selectCustomIcon">
+                                            <select class="customInput customSelect smallWidth" name="studentStatus" id="studentStatus">
+                                                <option class="smallWidth" value="Active">Active</option>
+                                                <option class="smallWidth" value="Inactive">Inactive</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="marginTopBottom buttonFixed">
+                                        <input class="customBtn submitBtn" id="addNewStudentBtn" name="addNewStudentBtn" type="submit" value="ADD NEW">
+                                    </div>
+                                </div>
+
+                            <div class="inputFieldMargin selectDiv">
+
+                                <div class="marginFixed">
+                                    <label class="customLabel" for="studentGender">Gender</label><br>
+                                    <div class="selectCustomIcon">
+                                        <select class="customInput customSelect smallWidth" name="studentGender" id="studentGender">
+                                            <option class="smallWidth" value="Female">Female</option>
+                                            <option class="smallWidth" value="Male">Male</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="inputFieldMargin">
+                                    <label class="customLabel" for="studentRelationship">Relationship with student</label><br>
+                                    <div class="selectCustomIcon">
+                                        <select class="customInput customSelect smallWidth" name="studentRelationship" id="studentRelationship">
+                                            <option class="smallWidth" value="Select">Select</option>
+                                            <option class="smallWidth" value="Son">Son</option>
+                                            <option class="smallWidth" value="Daughter">Daughter</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                
+                                <div class="inputFieldMargin">
+                                    <label class="customLabel" for="addStudentEmail">Email</label><br>
+                                    <input class="customInput smallWidth" type="email" id="addStudentEmail" name="addStudentEmail" placeholder="Type">
+                                </div>
+
+                                <div class="inputFieldMargin">
+                                    <label class="customLabel" for="studentOrganization">Organization Assigned</label><br>
+                                    <div class="selectCustomIcon">
+                                        <select class="customInput customSelect smallWidth" name="studentOrganization" id="studentOrganization">
+                                            <option class="smallWidth" value="Type">Type</option>
+                                            <option class="smallWidth" value="Type1">Type - 1</option>
+                                            <option class="smallWidth" value="Type2">Type - 2</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+
+                            <div class="inputFieldMargin">
+                                <label class="customLabel" for="addStudentAccessEndDate">Access Validity End Date</label><br>
+                                <div class="datePicker">
+                                    <input class="customInput smallWidth" type="date" id="addStudentAccessEndDate" name="addStudentAccessEndDate" >
+                                </div>
+                            </div>
+
+                            <div class="inputFieldMargin">
+                                <label class="customLabel" for="addStudentPassword">Password</label><br>
+                                <div class="passwordIconFixed">
+                                    <input class="customInput smallWidth" type="password" value="Type" id="addStudentPassword" name="addStudentPassword">
+                                    <img class="passwordImg" src="assets/images/hide-password-icon.png" onclick="addStudentPasswordToggle()" alt="icon">
+                                </div>   
+                            </div>
+
+                            <div class="marginTopBottom mobileBSubmitBtn">
+                                <input class="customBtn submitBtn" id="addNewStudentBtn" name="addNewStudentBtn" type="submit" value="ADD NEW">
+                            </div>
+
+                           </div>
+                        </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+         </div>
+
+     </div>
+  </section>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="assets/js-code/password-toggle.js"></script>
+  <script src="assets/js-code/image-upload-preview.js"></script>
+  <script src="assets/js-code/custom.js"></script>
+</body>
+</html>
